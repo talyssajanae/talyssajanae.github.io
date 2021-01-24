@@ -1,0 +1,33 @@
+/* CSS DOCUMENT */
+body{
+background-color: #f0fef2;
+margin: 3em 2em 3em 2em 
+}
+h1{
+color: #294f6f;
+font-family:"Garamond", serif;
+font-size: 3em;
+text-align: center;
+}
+h2{
+color: #fa8128;
+font-family: "Proxima Nova", sans-serif;
+text-align: center;
+text-transform: uppercase;
+border-top: 1.5px solid;
+border-bottom: 1.5px solid;  
+}
+h3{
+color: #294f6f ;
+font-family: "Proxima Nova", sans-serif;
+text-transform: uppercase;
+font-style: oblique
+}
+h4{
+color: #fa8128;
+font-family: "Proxima Nova", sans-serif;
+}
+p{
+color: #000000;
+font-family: "Proxima Nova", sans-serif;
+}
