@@ -1,0 +1,79 @@
+/*CSS DOCUMENT*/
+
+/*My edited version of the Eric Meyer’s reset tool. Feel free to keep it or delete it. */
+
+div.container {
+    max-width: 50em;
+    margin: auto;
+}
+
+header {
+    padding: 1em;
+    grid-column: 1/3;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+}
+
+h1 {
+    color: #ff7820;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 1em 0em 1em;
+}
+
+h2 {
+    color: #ffb280;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5em 1em 1em 1em;
+}
+
+h3 {
+    color: #ffb280;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: left;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+ul,
+ol {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%; /*Please leave this line.*/
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+
+figcaption {
+    font-family: sans-serif;
+    text-align: left;
+    background-color: antiquewhite;
+    padding: 0em 0em 0em 1em;
+}
+
+footer {
+    color: #ff7820;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+}
+
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
