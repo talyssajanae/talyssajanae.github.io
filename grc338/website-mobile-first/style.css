@@ -1,0 +1,99 @@
+/*CSS DOCUMENT*/
+
+#header {
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #ebebeb;
+    padding: 0em 1em 1em 1em;
+}
+
+#nav-container li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ebebeb;
+    display: inline;
+    padding: 3em 2em 0em 0em;
+    float: right;
+}
+
+body {
+    padding-top: 100px;
+    background-color: #ebebeb;
+}
+
+.logo {
+    float: left;
+    width: 100%;
+    height: 101px;
+    width: 231px;
+    display: block;
+}
+img {
+    width: 100%;
+    align-content: center;
+    display: block;
+}
+
+li {
+    list-style: square;
+    margin: 0em 0em 0em 5em;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 0px 30px 20px 5px;
+}
+
+a {
+    color: #000000;
+    font-family: "Proxima Nova", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+h2 {
+    color: #000000;
+    font-size: 2.5em;
+    font-family: "Proxima Nova", sans-serif;
+    text-transform: uppercase;
+    padding: 0em 0em 0em 1em;
+}
+
+h3 {
+    color: #000000;
+    font-family: "Proxima Nova", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0em 0em 0em 3em;
+}
+
+h4 {
+    color: #000000;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 1.3em;
+    font-style: oblique;
+}
+
+p {
+    font-size: 14pt;
+    color: #000000;
+    font-family: "Proxima Nova", sans-serif;
+    padding: 0em 2em 0em 2em;
+}
+
+footer {
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    background-color: #3b3a3a;
+}
+
+footer p {
+    font-size: 11pt;
+    color: #ffffff;
+    text-transform: uppercase;
+}
