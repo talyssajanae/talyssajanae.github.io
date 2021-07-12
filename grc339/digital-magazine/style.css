@@ -1,0 +1,87 @@
+/*CSS document*/
+
+body {
+    font-family: Altivo, sans-serif;
+    background-color: #f7f7f7;
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+}
+
+figure {
+    margin:  3em 0em 0em 0em;
+}
+
+img {
+    width: 100%;
+    margin: 0em 0em .5em 0em;
+}
+
+p {
+    color: #000000;
+    margin: 0em 0em 1em 0em;
+}
+
+h2 {
+    font-family: Altivo, sans-serif;
+    text-transform: uppercase;
+    color: #ad563e;  
+}
+
+h3 {
+    font-family: Altivo, sans-serif;
+    text-transform: uppercase;
+    color: #ad563e;
+    margin: 0em 0em 0em 0em;
+}
+
+a {
+    text-decoration: none;}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin: 1em;
+    font-family: Altivo, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-style: ;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #4b3021;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9b7c5d;
+}
+
+.teaser-image p {
+
+    margin: 0em 0em 3em 0em 
+}
+.teaser-noimage p {
+    margin: 0em 0em 3em 0em;
+}
+
+
+figcaption {
+    font-family: Altivo, sans-serif;
+    color: #000000;
+    margin: 0em 0em 2em 0em;
+}
