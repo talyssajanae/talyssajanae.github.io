@@ -18,12 +18,17 @@ div.container {
     margin: auto;
 }
 
-section {
-    max-width: 40em;
-    margin: 0 auto 3em;
+div.container-stories {
+    max-width: 60em;
+    margin: auto;
 }
 
-aside{
+section {
+    max-width: 40em;
+    margin: 0 auto 2em;
+}
+
+aside {
     grid-column: 2/3;
 }
 
@@ -32,13 +37,16 @@ article figcaption {
 }
 
 figure {
-    margin:  0em 0em 1em 0em;
+    margin: 0em 0em 1em 0em;
 }
 
+figcaption {
+    margin: 0em 0em 2em 0em;
+}
 
 img {
     width: 100%;
-    margin: 0em 0em .5em 0em;
+    margin: 0em 0em 0.5em 0em;
 }
 
 p {
@@ -53,7 +61,7 @@ h1 {
 h2 {
     font-family: Altivo, sans-serif;
     text-transform: uppercase;
-    color: #ad563e;  
+    color: #ad563e;
 }
 
 h3 {
@@ -63,8 +71,13 @@ h3 {
     margin: 0em 0em 0em 0em;
 }
 
+label {
+    flex: 1 0 10em;
+}
+
 a {
-    text-decoration: none;}
+    text-decoration: none;
+}
 
 ul {
     list-style-type: none;
@@ -96,52 +109,105 @@ nav ul li a:hover {
     color: #9b7c5d;
 }
 
-.teaser-image p {
+/*Photo Gallery*/
 
-    margin: 0em 0em 1em 0em 
+div.photogallery {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+main.photogallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(77% + 3em);
+}
+
+main.photogallery figure {
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+main.photogallery figcaption {
+    font-family: Altivo, sans-serif;
+    text-transform: uppercase;
+    color: #9b7c5d;
+    font-size: 1.2em;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8) {
+    opacity: 1;
+}
+
+input {
+    display: none;
+}
+
+nav.photogallery {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 0.3em;
+}
+
+.teaser-image p {
+    margin: 0em 0em 1em 0em;
 }
 .teaser-noimage p {
     margin: 0em 0em 1em 0em;
 }
 
+/*Larger Screens*/
 
-figcaption {
-    font-family: Altivo, sans-serif;
-    color: #000000;
-    margin: 0em 0em 2em 0em;
-}
-
-@media screen and (min-width: 60em){
+@media screen and (min-width: 60em) {
     div.container {
         display: grid;
         grid-template-columns: 3fr 1fr;
-        grid-gap: 0 1em;
+        grid-gap: 0 2em;
     }
-    
+
+    div.container-stories {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 0 2em;
+    }
+
     header {
         grid-column: 1/3;
     }
-    
+
     main {
         grid-column: 1/2;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0 1em;
+        grid-gap: 0 2em;
     }
-    
+
+    aside {
+        grid-column: 2/3;
+    }
+
     section.mainstory {
         grid-column: 2/4;
         grid-row: 1/3;
         display: flex;
         flex-direction: column;
     }
-    
+
     section.mainstory figure {
         flex: 1 0 18em;
         display: flex;
         flex-direction: column;
     }
-    
+
     section.mainstory figure div {
         flex: 1 0 18em;
         background-image: url(mainstory.jpeg);
@@ -149,23 +215,32 @@ figcaption {
         background-size: cover;
         background-position: center;
     }
-    
+
     section.mainstory figure div img {
         height: 100%;
         opacity: 0;
     }
-    
+
     section.mainstory h3 {
         flex: 0 0 auto;
         margin: 0;
     }
-    
+
     section.mainstory p {
         flex: 0 0 auto;
         margin: 0;
     }
-    
-    aside {
-        grid-column: 2/3;
+
+    /*Photo Gallery*/
+
+    div.photogallery {
+        max-width: 60em;
+        margin: auto;
+    }
+
+    nav.photogallery {
+        display: grid;
+        grid-template-columns: repeat(8, 2fr);
+        grid-gap: 0.4em;
     }
 }
