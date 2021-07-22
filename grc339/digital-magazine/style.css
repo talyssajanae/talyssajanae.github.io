@@ -73,6 +73,7 @@ h3 {
 
 label {
     flex: 1 0 10em;
+    color: #404040;
 }
 
 a {
